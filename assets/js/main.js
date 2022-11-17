@@ -4,7 +4,7 @@
 const regex = new RegExp('variant-1', 'gm')
 
 const str = window.location.href;
-const subst = `orginal`;
+const subst = `original`;
 
 // The substituted value will be contained in the result variable
 const result = str.replace(regex, subst);
