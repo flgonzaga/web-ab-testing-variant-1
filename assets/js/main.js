@@ -15,9 +15,9 @@ const re = new RegExp( String.raw `([\'|\"]https:\/\/)(${domain})(\S+[\'|\"])`, 
 
 // now I'll use the regex expression groups to replace the domain
 const domainSubst = `$1${newDomain}$3`;
-
+console.log(domainSubst)
 // const page contains all the html text
-const result = page.replace(re, domainSubst);
+// const result = page.replace(re, domainSubst);
 
 // Current URL: https://my-website.com/page_a
 // const nextURL = 'https://flgonzaga.github.io/web-ab-testing-original/';
@@ -25,7 +25,7 @@ const nextTitle = 'Home Page - Variant 1';
 const nextState = { additionalInformation: 'Updated the URL with JS' };
 
 // This will create a new entry in the browser's history, without reloading
-window.history.pushState(nextState, nextTitle, result);
+window.history.pushState(nextState, nextTitle, domainSubst);
 
 // This will replace the current entry in the browser's history, without reloading
-window.history.replaceState(nextState, nextTitle, result);
+window.history.replaceState(nextState, nextTitle, domainSubst);
