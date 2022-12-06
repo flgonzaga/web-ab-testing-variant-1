@@ -53,7 +53,7 @@ if (isset($_POST['request']) && ($_POST['request'] == 'ab'))
     <script>
         gtag('event', 'experiment_impression', {
             'experiment_id': 'hA8zNR0GTFGIxr2jWnU1UA',
-            'variant_id': 'hA8zNR0GTFGIxr2jWnU1UA.0',
+            'variant_id': 'hA8zNR0GTFGIxr2jWnU1UA.1',
             'sent_to': 'G-7NYMGM621S',
         });
     </script>
