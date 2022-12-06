@@ -37,5 +37,16 @@
     <h1>Hello World</h1>
     <p>Variant 1 version has been loaded.</p>
     <a href="page.html">Go to page</a>
+    <script>
+        
+        var data = new FormData();
+        data.append('request', 'ab');
+        // data.append('requiredkey', 'key');
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'test.php', true);
+        xhr.send(data);
+
+    </script>
 </body>
 </html>
