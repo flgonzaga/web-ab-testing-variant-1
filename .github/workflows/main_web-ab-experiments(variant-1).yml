@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'web-ab-experiments'
           slot-name: 'variant-1'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_659E4D3068FA4A4EA98B6E7B534C8B59 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_40A164211B284E94B3783A5F3B693DAE }}
           package: .
